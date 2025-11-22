@@ -5,6 +5,15 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
+      <a
+        href="https://wa.me/79658501441"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+        aria-label="Написать в WhatsApp"
+      >
+        <Icon name="MessageCircle" size={32} />
+      </a>
       <header className="border-b sticky top-0 bg-white/95 backdrop-blur-sm z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
@@ -40,13 +49,17 @@ const Index = () => {
                 Монтаж видеонаблюдения, домофонов, интернета, СКУД и охранной сигнализации. Продажа оборудования от ведущих производителей.
               </p>
               <div className="flex flex-wrap gap-4">
-                <Button size="lg" className="text-base">
-                  <Icon name="MessageCircle" size={20} className="mr-2" />
-                  Получить консультацию
+                <Button size="lg" className="text-base" asChild>
+                  <a href="https://wa.me/79658501441" target="_blank" rel="noopener noreferrer">
+                    <Icon name="MessageCircle" size={20} className="mr-2" />
+                    WhatsApp консультация
+                  </a>
                 </Button>
-                <Button size="lg" variant="outline" className="text-base">
-                  <Icon name="Calculator" size={20} className="mr-2" />
-                  Расчет стоимости
+                <Button size="lg" variant="outline" className="text-base" asChild>
+                  <a href="tel:89658501441">
+                    <Icon name="Phone" size={20} className="mr-2" />
+                    Позвонить
+                  </a>
                 </Button>
               </div>
             </div>
@@ -249,8 +262,10 @@ const Index = () => {
               <Button variant="ghost" size="icon" className="hover:bg-background/10">
                 <Icon name="Mail" size={20} />
               </Button>
-              <Button variant="ghost" size="icon" className="hover:bg-background/10">
-                <Icon name="MessageCircle" size={20} />
+              <Button variant="ghost" size="icon" className="hover:bg-background/10" asChild>
+                <a href="https://wa.me/79658501441" target="_blank" rel="noopener noreferrer">
+                  <Icon name="MessageCircle" size={20} />
+                </a>
               </Button>
             </div>
           </div>
