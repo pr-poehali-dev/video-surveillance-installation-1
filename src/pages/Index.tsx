@@ -16,9 +16,11 @@ const Index = () => {
             <a href="#advantages" className="text-foreground hover:text-primary transition-colors">Преимущества</a>
             <a href="#contact" className="text-foreground hover:text-primary transition-colors">Контакты</a>
           </nav>
-          <Button className="hidden md:flex">
-            <Icon name="Phone" size={18} className="mr-2" />
-            Позвонить
+          <Button className="hidden md:flex" asChild>
+            <a href="tel:89658501441">
+              <Icon name="Phone" size={18} className="mr-2" />
+              8 (965) 850-14-41
+            </a>
           </Button>
           <Button variant="ghost" size="icon" className="md:hidden">
             <Icon name="Menu" size={24} />
@@ -180,9 +182,11 @@ const Index = () => {
               Оставьте заявку, и наш специалист свяжется с вами в течение 15 минут для бесплатной консультации
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" variant="secondary" className="text-base">
-                <Icon name="Phone" size={20} className="mr-2" />
-                +7 (XXX) XXX-XX-XX
+              <Button size="lg" variant="secondary" className="text-base" asChild>
+                <a href="tel:89658501441">
+                  <Icon name="Phone" size={20} className="mr-2" />
+                  8 (965) 850-14-41
+                </a>
               </Button>
               <Button size="lg" variant="outline" className="text-base bg-transparent border-2 border-white text-white hover:bg-white hover:text-primary">
                 <Icon name="Send" size={20} className="mr-2" />
@@ -215,7 +219,7 @@ const Index = () => {
                   <Icon name="Phone" className="text-primary" size={28} />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Телефон</h3>
-                <p className="text-muted-foreground text-sm">+7 (XXX) XXX-XX-XX</p>
+                <a href="tel:89658501441" className="text-muted-foreground text-sm hover:text-primary transition-colors">8 (965) 850-14-41</a>
               </Card>
               
               <Card className="p-6 text-center hover:shadow-lg transition-shadow">
@@ -223,7 +227,7 @@ const Index = () => {
                   <Icon name="Mail" className="text-primary" size={28} />
                 </div>
                 <h3 className="font-semibold text-foreground mb-2">Email</h3>
-                <p className="text-muted-foreground text-sm">info@securepro.ru</p>
+                <a href="mailto:video18izh@yandex.ru" className="text-muted-foreground text-sm hover:text-primary transition-colors">video18izh@yandex.ru</a>
               </Card>
             </div>
           </div>
