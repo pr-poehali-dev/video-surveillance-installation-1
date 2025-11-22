@@ -5,15 +5,26 @@ import Icon from "@/components/ui/icon";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background">
-      <a
-        href="https://wa.me/79658501441"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="fixed bottom-6 right-6 z-50 bg-[#25D366] text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 whatsapp-pulse"
-        aria-label="Написать в WhatsApp"
-      >
-        <Icon name="MessageCircle" size={32} />
-      </a>
+      <div className="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <a
+          href="https://t.me/Video18izh"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#0088cc] text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300"
+          aria-label="Написать в Telegram"
+        >
+          <Icon name="Send" size={32} />
+        </a>
+        <a
+          href="https://wa.me/79658501441"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-[#25D366] text-white rounded-full p-4 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 whatsapp-pulse"
+          aria-label="Написать в WhatsApp"
+        >
+          <Icon name="MessageCircle" size={32} />
+        </a>
+      </div>
       <header className="border-b sticky top-0 bg-white/95 backdrop-blur-sm z-50">
         <div className="container mx-auto px-4 py-4 flex items-center justify-between">
           <div className="flex items-center gap-2">
